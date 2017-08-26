@@ -2,15 +2,24 @@ require './hero'
 
 describe Hero do
 
-  it 'has a capitalized name' do
-    hero = Hero.new 'butok'
+  before do
+    @hero = Hero.new 'butok'
+  end
 
-    expect(hero.name).to eq 'Butok' #аналог hero.name == 'Mike'
+  it 'has a capitalized name' do
+    expect(@hero.name).to eq 'Butok' #аналог hero.name == 'Butok'
   end
 
   it 'can power up' do
-    hero = Hero.new 'ira'
-
-    expect(hero.power_up).to eq 110
+    expect(@hero.power_up).to eq 110
   end
+
+  it 'can power_down' do
+    expect(@hero.power_down).to eq 90
+  end
+
+  it 'displays full hero info' do
+    expect(@hero.hero_info).to eq 'Our hero Butok hes 100 of health'
+  end
+
 end
