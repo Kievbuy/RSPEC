@@ -7,5 +7,10 @@ describe Hero do
 
     expect(hero.name).to eq 'Butok' #аналог hero.name == 'Mike'
   end
-  
+
+  it 'can power up' do
+    hero = Hero.new 'ira'
+
+    expect(hero.power_up).to eq 110
+  end
 end
