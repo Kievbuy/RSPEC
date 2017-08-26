@@ -28,9 +28,9 @@ end
 
 hero = Hero.new('butok')
 
-puts hero.name
-puts hero.health
-puts hero.power_up
-puts '==='
-puts hero.hero_info
-puts '==='
+# puts hero.name
+# puts hero.health
+# puts hero.power_up
+# puts '==='
+# puts hero.hero_info
+# puts '==='
