@@ -5,6 +5,7 @@ describe Car do
   before do
     #arrange
     @car = Car.new
+
   end
 
   it 'Must return range' do
